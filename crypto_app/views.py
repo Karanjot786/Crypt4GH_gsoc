@@ -77,7 +77,7 @@ def encrypt(request):
                     encfile.write(enc)
                     print(file)
                 
-                subject, from_email, to = 'CryptoFile Encryption', obj['from_mail'], user.email
+                subject, from_email, to = 'Crypt4GH Encryption', obj['from_mail'], user.email
                 now = datetime.now()
                 day = date.today()
                 d1 = day.strftime("%B %d , %Y")
@@ -97,36 +97,6 @@ def encrypt(request):
 
    
     return render(request, 'crypto_app/encrypt.html')
-
-# def contact(request):
-#     if request.method == "POST" :
-#         name = request.POST.get('contactname', '')
-#         email = request.POST.get('contactemail', '')
-#         phone = request.POST.get('contactphone', '')
-#         desc = request.POST.get('contactmsg', '')
-#         print(name)
-#         print(email)
-#         print(phone)
-#         print(desc)
-#         if len(name)<2 or len(email)<3 or len(phone)<10 or len(desc)<5:
-#             messages.error(request,"please fill the form correctly")
-#         else:
-#             contact = Contact(name=name, email=email, phone=phone, desc=desc)
-#             contact.save()
-#             subject, from_email, to = f'{name} facing some problem with Cryptofile', obj['from_mail'], obj['contact_mail']
-    
-#             html_content = render_to_string('crypto_app/contactsend.html', {'name':name , 'email':email,'phone':phone,'desc':desc}) # render with dynamic value
-#             text_content = strip_tags(html_content) # Strip the html tag. So people can see the pure text at least.
-
-#             # create the email, and attach the HTML version as well.
-#             msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
-#             msg.attach_alternative(html_content, "text/html")
-#             msg.send()
-#             messages.success(request," Message  sent Sucessfully ,we will contact you within Hour ")
-#             return redirect('/')
-
-           
-#     return render(request, 'crypto_app/contact.html')
 
 def decrypt(request):
     user = request.user
@@ -175,7 +145,7 @@ def decrypt(request):
                             decfile.write(dec)
                             print(efile)
                         
-                        subject, from_email, to = 'CryptoFile Decryption', obj['from_mail'], user.email
+                        subject, from_email, to = 'Crypt4GH Decryption', obj['from_mail'], user.email
                         now = datetime.now()
                         day = date.today()
                         d1 = day.strftime("%B %d , %Y")
