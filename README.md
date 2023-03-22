@@ -46,6 +46,9 @@ Open “http://127.0.0.1:8000” in your browser.
 
 To secure personal data, Crypt4GH is designed to encrypt critical files with a password before downloading the file. If they ever need to access the encrypted file, they may decrypt the downloaded file since there is a blog where users can read the most recent security concerns. 
 
+#### Login or Register
+Before you may encrypt or decrypt the file, you must first log in or register.
+![login](./static/images/login.png)
 <!-- 1. Home Page of website
 ![level1](./static/images/Crypt4GH.png) -->
 
