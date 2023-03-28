@@ -5,10 +5,10 @@
 1. [Pre-Requirements](#pre-requirements)
 2. [Installation](#installation)
 3. [How it work](#how-it-work)
-    1.[Encryption Page](#encryption-page)
-    2.[Decryption Page](#decryption-page)
-    3.[Words Encryption](#words-encryption)
-    4.[Words Decrypted](#words-decrypted)
+    - [Encryption Page](#encryption-page)
+    - [Decryption Page](#decryption-page)
+    - [Words Encryption](#words-encryption)
+    - [Words Decrypted](#words-decrypted)
 
 ### Introduction
 It is the demo project of my GSoC project name Cryptography: Data API serving Crypt4GH-encrypted files with a custom Crypt4GH.header and the irganisation name is Global Alliance for Genomics and Health.
